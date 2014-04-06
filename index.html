@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+<head>
+	<title>Silly Simple</title>
+</head>
+<body>
+	<button id="doit">do it</button>
+	<button id="clear">clear it</button>
+
+<script src="jq.js"></script>
+<script>
+$('#doit').click(function(){
+	
+	$('body').append("<p>sandesh bhalekar</p>");
+});
+
+$('#clear').click(function(){
+	
+	$('body').find('p').remove();
+});
+</script>
+</body>
+</html>
